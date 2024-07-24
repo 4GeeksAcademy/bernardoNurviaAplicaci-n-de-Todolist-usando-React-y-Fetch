@@ -10,7 +10,9 @@ const Home = () => {
 
   const agregarTarea = (evento) => {
     evento.preventDefault(); // Previene el comportamiento por defecto del formulario
-    setTodos([...todos, todo]); // Agrega la tarea actual al array de tareas
+    todo ==="" ?  
+	alert("Please enter task") : 
+	setTodos([...todos, todo]); // Agrega la tarea actual al array de tareas
     setTodo(""); // Limpia el input
   };
   const quitarTarea = (index) => {
@@ -40,6 +42,7 @@ const Home = () => {
 			Add task
             </button>
             <p>ToDo´s:{todo}</p>
+			
             <div className="container text-center col">
               <ul className="list-group">
                 {todos.map((tarea, index) => (
