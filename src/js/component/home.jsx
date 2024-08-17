@@ -246,7 +246,7 @@ const Home = () => {
             <button className="btn btn-success mt-2 mb-2" type="submit">
               Add task
             </button>
-            <p>ToDo´s:{todo}</p>
+            <p>To Dos:{todo}</p>
           </div>
         </form>
       </div>
